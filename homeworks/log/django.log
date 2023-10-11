@@ -1,0 +1,14 @@
+INFO 2023-10-11 13:16:03,274 autoreload 7950 8639578752 Watching for file changes with StatReloader
+INFO 2023-10-11 13:16:51,151 autoreload 7950 8639578752 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/homeworks/settings.py changed, reloading.
+INFO 2023-10-11 13:17:11,908 autoreload 8058 8634462848 Watching for file changes with StatReloader
+INFO 2023-10-11 13:17:16,884 basehttp 8058 13023416320 "GET / HTTP/1.1" 200 235
+INFO 2023-10-11 13:17:23,877 basehttp 8058 13040205824 "GET / HTTP/1.1" 200 235
+INFO 2023-10-11 13:17:42,746 basehttp 8058 13040205824 "GET / HTTP/1.1" 200 235
+INFO 2023-10-11 13:18:01,972 autoreload 8058 8634462848 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/homeworks/settings.py changed, reloading.
+INFO 2023-10-11 13:18:02,300 autoreload 8138 8592437888 Watching for file changes with StatReloader
+INFO 2023-10-11 13:18:05,583 basehttp 8138 12938575872 "GET / HTTP/1.1" 200 235
+INFO 2023-10-11 13:18:16,324 basehttp 8138 12938575872 "GET / HTTP/1.1" 200 235
+INFO 2023-10-11 13:18:19,011 basehttp 8138 12938575872 "GET /about HTTP/1.1" 301 0
+INFO 2023-10-11 13:18:19,031 basehttp 8138 12938575872 "GET /about/ HTTP/1.1" 200 1520
+INFO 2023-10-11 13:18:29,327 basehttp 8138 12938575872 "GET /about/ HTTP/1.1" 200 1520
+INFO 2023-10-11 13:18:50,681 basehttp 8138 12938575872 - Broken pipe from ('172.20.10.1', 50606)
