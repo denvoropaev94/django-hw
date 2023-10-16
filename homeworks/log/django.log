@@ -12,3 +12,32 @@ INFO 2023-10-11 13:18:19,011 basehttp 8138 12938575872 "GET /about HTTP/1.1" 301
 INFO 2023-10-11 13:18:19,031 basehttp 8138 12938575872 "GET /about/ HTTP/1.1" 200 1520
 INFO 2023-10-11 13:18:29,327 basehttp 8138 12938575872 "GET /about/ HTTP/1.1" 200 1520
 INFO 2023-10-11 13:18:50,681 basehttp 8138 12938575872 - Broken pipe from ('172.20.10.1', 50606)
+INFO 2023-10-16 05:35:58,541 autoreload 7578 8638943808 Watching for file changes with StatReloader
+INFO 2023-10-16 05:36:12,838 autoreload 7578 8638943808 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-16 05:36:13,150 autoreload 7584 8609210944 Watching for file changes with StatReloader
+INFO 2023-10-16 05:36:15,402 basehttp 7584 12969684992 "GET / HTTP/1.1" 200 235
+INFO 2023-10-16 05:36:18,458 basehttp 7584 12969684992 "GET / HTTP/1.1" 200 235
+INFO 2023-10-16 05:36:20,934 basehttp 7584 12969684992 "GET /hw2 HTTP/1.1" 301 0
+INFO 2023-10-16 05:36:20,947 basehttp 7584 12969684992 "GET /hw2/ HTTP/1.1" 200 4
+INFO 2023-10-16 05:36:38,787 autoreload 7584 8609210944 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-16 05:36:39,103 autoreload 7597 8635548224 Watching for file changes with StatReloader
+INFO 2023-10-16 05:36:42,519 basehttp 7597 13024264192 "GET /hw2/ HTTP/1.1" 200 11
+INFO 2023-10-16 05:36:47,805 basehttp 7597 13024264192 "GET /hw2/clients HTTP/1.1" 301 0
+INFO 2023-10-16 05:36:47,820 basehttp 7597 13024264192 "GET /hw2/clients/ HTTP/1.1" 200 238
+INFO 2023-10-16 05:37:58,643 autoreload 7597 8635548224 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-16 05:37:59,161 autoreload 7621 8636838464 Watching for file changes with StatReloader
+INFO 2023-10-16 05:44:58,257 autoreload 7841 8635925056 Watching for file changes with StatReloader
+INFO 2023-10-16 05:44:59,807 basehttp 7841 13024468992 "GET / HTTP/1.1" 200 235
+INFO 2023-10-16 05:45:05,213 basehttp 7841 13024468992 "GET /hw2/ HTTP/1.1" 200 11
+INFO 2023-10-16 05:45:11,032 basehttp 7841 13024468992 "GET /hw2/ HTTP/1.1" 200 11
+INFO 2023-10-16 05:45:42,132 autoreload 7841 8635925056 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-16 05:45:42,471 autoreload 7859 8595636800 Watching for file changes with StatReloader
+INFO 2023-10-16 05:45:46,623 autoreload 7859 8595636800 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-16 05:45:46,844 autoreload 7866 8600920640 Watching for file changes with StatReloader
+INFO 2023-10-16 05:45:49,232 basehttp 7866 12952891392 "GET /hw2/ HTTP/1.1" 200 11
+INFO 2023-10-16 05:45:54,565 basehttp 7866 12952891392 "GET /hw2/products HTTP/1.1" 301 0
+INFO 2023-10-16 05:45:54,580 basehttp 7866 12952891392 "GET /hw2/products/ HTTP/1.1" 200 721
+INFO 2023-10-16 05:57:03,232 autoreload 7866 8600920640 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/models.py changed, reloading.
+INFO 2023-10-16 05:57:03,642 autoreload 8066 8673358400 Watching for file changes with StatReloader
+INFO 2023-10-16 06:13:36,253 autoreload 8066 8673358400 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/models.py changed, reloading.
+INFO 2023-10-16 06:13:36,622 autoreload 8132 8673632832 Watching for file changes with StatReloader
