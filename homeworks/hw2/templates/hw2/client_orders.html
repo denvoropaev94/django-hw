@@ -1,0 +1,11 @@
+{% extends 'hw2/base.html' %}
+{% block title %}{{ client.name }}'s Orders{% endblock %}
+{% block content %}
+<h1>Заказы пользователя: {{ client.name }}:</h1>
+    {% for order in orders %}
+            <p>Сумма заказа:{{ order.total_price }} и дата заказа:{{ order.date_ordered}}</p>
+            <p>Товар: {{ products.pop }}</p>
+            </hr>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'hw2/base.html' %}
+{% block title %}{{ client.name }}'s Products for last {% endblock %}
+{% block content %}
+    <h3>Все товары пользователя: {{ client.name }} за последние {{ days }} дней</h3>
+    {% for product in product_set %}
+        <p>{{ product }}</p>
+    {% endfor %}
+{% endblock %}

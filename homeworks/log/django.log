@@ -41,3 +41,1982 @@ INFO 2023-10-16 05:57:03,232 autoreload 7866 8600920640 /Users/denisvoropaev/Pyc
 INFO 2023-10-16 05:57:03,642 autoreload 8066 8673358400 Watching for file changes with StatReloader
 INFO 2023-10-16 06:13:36,253 autoreload 8066 8673358400 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/models.py changed, reloading.
 INFO 2023-10-16 06:13:36,622 autoreload 8132 8673632832 Watching for file changes with StatReloader
+INFO 2023-10-18 06:26:26,113 autoreload 19433 8593101376 Watching for file changes with StatReloader
+INFO 2023-10-18 06:26:28,559 basehttp 19433 12939980800 "GET / HTTP/1.1" 200 235
+WARNING 2023-10-18 06:26:29,139 log 19433 12939980800 Not Found: /favicon.ico
+WARNING 2023-10-18 06:26:29,139 basehttp 19433 12939980800 "GET /favicon.ico HTTP/1.1" 404 2544
+INFO 2023-10-18 06:26:31,193 basehttp 19433 12939980800 "GET / HTTP/1.1" 200 235
+WARNING 2023-10-18 06:26:40,809 log 19433 12939980800 Not Found: /create_order/2/3
+WARNING 2023-10-18 06:26:40,810 basehttp 19433 12939980800 "GET /create_order/2/3 HTTP/1.1" 404 2559
+ERROR 2023-10-18 06:27:01,975 log 19433 12939980800 Internal Server Error: /hw2/create_order/2/3
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 270, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'int' object is not iterable
+ERROR 2023-10-18 06:27:01,989 basehttp 19433 12939980800 "GET /hw2/create_order/2/3 HTTP/1.1" 500 114280
+INFO 2023-10-18 06:29:00,460 autoreload 19433 8593101376 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 06:29:00,815 autoreload 19454 8667152960 Watching for file changes with StatReloader
+INFO 2023-10-18 06:31:51,005 autoreload 19454 8667152960 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 06:31:51,350 autoreload 19494 8602047040 Watching for file changes with StatReloader
+INFO 2023-10-18 06:37:37,598 autoreload 19648 8663753280 Watching for file changes with StatReloader
+INFO 2023-10-18 06:51:19,272 autoreload 19875 8666284608 Watching for file changes with StatReloader
+WARNING 2023-10-18 06:51:27,704 log 19875 13083791360 Not Found: /sem3/about/
+WARNING 2023-10-18 06:51:27,706 basehttp 19875 13083791360 "GET /sem3/about/ HTTP/1.1" 404 2544
+INFO 2023-10-18 06:51:27,922 basehttp 19875 13083791360 "GET / HTTP/1.1" 200 235
+INFO 2023-10-18 06:51:29,910 basehttp 19875 13083791360 "GET / HTTP/1.1" 200 235
+WARNING 2023-10-18 06:51:32,515 log 19875 13083791360 Not Found: /hw2/create_order/2/3
+WARNING 2023-10-18 06:51:32,516 basehttp 19875 13083791360 "GET /hw2/create_order/2/3 HTTP/1.1" 404 3190
+INFO 2023-10-18 06:51:32,935 basehttp 19875 13083791360 "GET /hw2/ HTTP/1.1" 200 11
+WARNING 2023-10-18 06:51:37,101 log 19875 13083791360 Not Found: /hw2/create_order/2/3
+WARNING 2023-10-18 06:51:37,102 basehttp 19875 13083791360 "GET /hw2/create_order/2/3 HTTP/1.1" 404 3190
+INFO 2023-10-18 06:51:39,731 basehttp 19875 13083791360 "GET /hw2/create_order/2 HTTP/1.1" 301 0
+ERROR 2023-10-18 06:51:39,779 log 19875 13083791360 Internal Server Error: /hw2/create_order/2/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: create_order() missing 1 required positional argument: 'product_ids'
+ERROR 2023-10-18 06:51:39,780 basehttp 19875 13083791360 "GET /hw2/create_order/2/ HTTP/1.1" 500 55996
+INFO 2023-10-18 06:52:19,618 autoreload 19875 8666284608 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 06:52:19,945 autoreload 19919 8633299520 Watching for file changes with StatReloader
+INFO 2023-10-18 06:52:25,325 basehttp 19919 13021339648 "GET /hw2/create_order/2/3 HTTP/1.1" 301 0
+INFO 2023-10-18 06:52:25,343 basehttp 19919 13021339648 "GET /hw2/create_order/2/3/ HTTP/1.1" 200 105
+INFO 2023-10-18 06:53:59,981 basehttp 19919 13021339648 "GET /hw2/create_order/7/1/ HTTP/1.1" 200 103
+INFO 2023-10-18 06:54:21,015 basehttp 19919 13021339648 "GET /hw2/create_order/7/5/ HTTP/1.1" 200 102
+INFO 2023-10-18 06:54:44,479 basehttp 19919 13021339648 "GET /hw2/create_order/3/54/ HTTP/1.1" 200 104
+INFO 2023-10-18 06:58:57,331 basehttp 19919 13021339648 "GET /hw2/create_order/5/10/ HTTP/1.1" 200 106
+INFO 2023-10-18 06:59:29,513 basehttp 19919 13021339648 "GET /hw2/create_order/5/6/ HTTP/1.1" 200 105
+ERROR 2023-10-18 06:59:40,348 log 19919 13021339648 Internal Server Error: /hw2/create_order/4/10.0/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '.'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '.'.
+ERROR 2023-10-18 06:59:40,363 basehttp 19919 13021339648 "GET /hw2/create_order/4/10.0/ HTTP/1.1" 500 123251
+ERROR 2023-10-18 06:59:53,339 log 19919 13021339648 Internal Server Error: /hw2/create_order/4/'10'/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: "'"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got "'".
+ERROR 2023-10-18 06:59:53,351 basehttp 19919 13021339648 "GET /hw2/create_order/4/'10'/ HTTP/1.1" 500 123555
+ERROR 2023-10-18 07:00:07,489 log 19919 13021339648 Internal Server Error: /hw2/create_order/4/'10'/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: "'"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got "'".
+ERROR 2023-10-18 07:00:07,502 basehttp 19919 13021339648 "GET /hw2/create_order/4/'10'/ HTTP/1.1" 500 123555
+ERROR 2023-10-18 07:00:11,369 log 19919 13021339648 Internal Server Error: /hw2/create_order/4/10.0/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '.'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '.'.
+ERROR 2023-10-18 07:00:11,374 basehttp 19919 13021339648 "GET /hw2/create_order/4/10.0/ HTTP/1.1" 500 123251
+ERROR 2023-10-18 07:00:20,026 log 19919 13021339648 Internal Server Error: /hw2/create_order/4/'10'/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: "'"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got "'".
+ERROR 2023-10-18 07:00:20,033 basehttp 19919 13021339648 "GET /hw2/create_order/4/'10'/ HTTP/1.1" 500 123555
+INFO 2023-10-18 07:00:20,445 basehttp 19919 13021339648 "GET /hw2/create_order/4/2 HTTP/1.1" 301 0
+INFO 2023-10-18 07:00:20,464 basehttp 19919 13021339648 "GET /hw2/create_order/4/2/ HTTP/1.1" 200 105
+INFO 2023-10-18 07:01:22,262 autoreload 20076 8638734912 Watching for file changes with StatReloader
+INFO 2023-10-18 07:01:23,153 basehttp 20076 13029724160 "GET / HTTP/1.1" 200 235
+INFO 2023-10-18 07:01:26,070 basehttp 20076 13029724160 "GET /hw2/ HTTP/1.1" 200 11
+INFO 2023-10-18 07:01:32,829 basehttp 20076 13029724160 "GET /hw2/ HTTP/1.1" 200 11
+WARNING 2023-10-18 07:01:33,241 log 20076 13029724160 Not Found: /hw2/create_order/2/
+WARNING 2023-10-18 07:01:33,242 basehttp 20076 13029724160 "GET /hw2/create_order/2/ HTTP/1.1" 404 3211
+WARNING 2023-10-18 07:01:35,094 log 20076 13029724160 Not Found: /hw2/create_order/2/
+WARNING 2023-10-18 07:01:35,095 basehttp 20076 13029724160 "GET /hw2/create_order/2/ HTTP/1.1" 404 3211
+INFO 2023-10-18 07:01:38,472 basehttp 20076 13029724160 "GET /hw2/create_order/7/5/ HTTP/1.1" 200 102
+INFO 2023-10-18 07:01:39,687 basehttp 20076 13029724160 "GET /hw2/create_order/7/1/ HTTP/1.1" 200 103
+ERROR 2023-10-18 07:01:42,765 log 20076 13029724160 Internal Server Error: /hw2/create_order/7/10,/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+ERROR 2023-10-18 07:01:42,774 basehttp 20076 13029724160 "GET /hw2/create_order/7/10,/ HTTP/1.1" 500 123226
+ERROR 2023-10-18 07:01:55,026 log 20076 13029724160 Internal Server Error: /hw2/create_order/7/10./
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '.'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 23, in create_order
+    products = Product.objects.filter(pk__in=product_ids)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '.'.
+ERROR 2023-10-18 07:01:55,036 basehttp 20076 13029724160 "GET /hw2/create_order/7/10./ HTTP/1.1" 500 123226
+INFO 2023-10-18 07:01:59,846 basehttp 20076 13029724160 "GET /hw2/create_order/7/10/ HTTP/1.1" 200 103
+INFO 2023-10-18 07:02:34,647 basehttp 20076 13029724160 "GET /hw2/create_order/7/11/ HTTP/1.1" 200 103
+INFO 2023-10-18 07:02:42,326 basehttp 20076 13029724160 "GET /hw2/create_order/1/11/ HTTP/1.1" 200 104
+WARNING 2023-10-18 07:02:59,794 log 20076 13029724160 Not Found: /hw2/create_order/6/9/
+WARNING 2023-10-18 07:02:59,795 basehttp 20076 13029724160 "GET /hw2/create_order/6/9/ HTTP/1.1" 404 3377
+INFO 2023-10-18 07:03:17,430 basehttp 20076 13029724160 "GET /hw2/create_order/5/9/ HTTP/1.1" 200 105
+INFO 2023-10-18 07:12:53,564 autoreload 20076 8638734912 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:12:54,011 autoreload 20275 8636203584 Watching for file changes with StatReloader
+INFO 2023-10-18 07:13:27,829 autoreload 20275 8636203584 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:13:28,259 autoreload 20283 8599949888 Watching for file changes with StatReloader
+INFO 2023-10-18 07:14:20,080 autoreload 20283 8599949888 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:14:20,444 autoreload 20294 8633659968 Watching for file changes with StatReloader
+INFO 2023-10-18 07:15:51,746 autoreload 20294 8633659968 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:15:52,121 autoreload 20334 8595616320 Watching for file changes with StatReloader
+INFO 2023-10-18 07:27:22,798 autoreload 20334 8595616320 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:27:23,142 autoreload 21015 8633340480 Watching for file changes with StatReloader
+INFO 2023-10-18 07:27:37,131 basehttp 21015 13017702400 "GET / HTTP/1.1" 200 235
+ERROR 2023-10-18 07:27:40,369 log 21015 13017702400 Internal Server Error: /hw2/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 8, in index
+    return render(request, 'hw2/index.html')
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+ERROR 2023-10-18 07:27:40,385 basehttp 21015 13017702400 "GET /hw2/ HTTP/1.1" 500 132145
+INFO 2023-10-18 07:28:35,559 autoreload 21015 8633340480 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 07:28:35,963 autoreload 21036 8638517824 Watching for file changes with StatReloader
+INFO 2023-10-18 07:28:39,019 basehttp 21036 13028139008 "GET /hw2/ HTTP/1.1" 200 960
+INFO 2023-10-18 07:30:56,346 basehttp 21036 13028139008 "GET /hw2/ HTTP/1.1" 200 1456
+INFO 2023-10-18 07:31:22,127 basehttp 21036 13028139008 "GET /hw2/ HTTP/1.1" 200 1457
+INFO 2023-10-18 07:31:31,225 basehttp 21036 13028139008 "GET /hw2/ HTTP/1.1" 200 1457
+INFO 2023-10-18 07:36:49,116 autoreload 21036 8638517824 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 07:36:49,481 autoreload 21121 8595190336 Watching for file changes with StatReloader
+INFO 2023-10-18 07:41:20,977 autoreload 21121 8595190336 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/models.py changed, reloading.
+INFO 2023-10-18 07:41:21,318 autoreload 21184 8663679552 Watching for file changes with StatReloader
+INFO 2023-10-18 07:41:30,360 basehttp 21184 13078654976 "GET /hw2/ HTTP/1.1" 200 1457
+INFO 2023-10-18 07:41:31,804 basehttp 21184 13078654976 "GET /hw2/clients/ HTTP/1.1" 200 238
+INFO 2023-10-18 07:41:38,587 basehttp 21184 13078654976 "GET /hw2/client_orders/7 HTTP/1.1" 301 0
+ERROR 2023-10-18 07:41:38,637 log 21184 13078654976 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    return render(request, 'client_orders.html', {'client': client, 'order': order})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: client_orders.html
+ERROR 2023-10-18 07:41:38,638 basehttp 21184 13078654976 "GET /hw2/client_orders/7/ HTTP/1.1" 500 75385
+INFO 2023-10-18 07:41:56,260 autoreload 21184 8663679552 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:41:56,591 autoreload 21201 8638616128 Watching for file changes with StatReloader
+ERROR 2023-10-18 07:42:00,528 log 21201 13030690816 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    return render(request, 'hw2/client_orders.html', {'client': client, 'order': order})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-10-18 07:42:00,718 basehttp 21201 13030690816 "GET /hw2/client_orders/7/ HTTP/1.1" 500 173622
+INFO 2023-10-18 07:42:26,392 autoreload 21208 8667611712 Watching for file changes with StatReloader
+INFO 2023-10-18 07:42:29,764 basehttp 21208 13086494720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 913
+INFO 2023-10-18 07:44:53,312 autoreload 21208 8667611712 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:44:53,640 autoreload 21225 8662573632 Watching for file changes with StatReloader
+INFO 2023-10-18 07:44:56,580 basehttp 21225 13079019520 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1770
+INFO 2023-10-18 07:45:04,667 basehttp 21225 13079019520 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1746
+INFO 2023-10-18 07:45:31,420 basehttp 21225 13079019520 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1650
+INFO 2023-10-18 07:52:25,875 basehttp 21225 13079019520 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1037
+INFO 2023-10-18 07:54:51,881 autoreload 21225 8662573632 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:54:52,449 autoreload 21372 8630989376 Watching for file changes with StatReloader
+INFO 2023-10-18 07:58:55,893 autoreload 21372 8630989376 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 07:58:56,295 autoreload 21413 8672244288 Watching for file changes with StatReloader
+INFO 2023-10-18 07:58:58,377 autoreload 21418 8632767040 Watching for file changes with StatReloader
+INFO 2023-10-18 07:59:02,390 basehttp 21418 13020491776 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1070
+INFO 2023-10-18 08:05:01,226 autoreload 21418 8632767040 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:05:01,603 autoreload 21463 8608870976 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:05:02,004 log 21463 12970573824 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 34, in client_orders
+    products = order.products(customer=client)
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 08:05:02,005 basehttp 21463 12970573824 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59811
+INFO 2023-10-18 08:05:29,186 autoreload 21463 8608870976 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:05:29,537 autoreload 21476 8631820864 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:05:31,522 log 21476 13015773184 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    products = orders.products(customer=client)
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 08:05:31,523 basehttp 21476 13015773184 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59618
+ERROR 2023-10-18 08:05:32,419 log 21476 13015773184 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    products = orders.products(customer=client)
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 08:05:32,420 basehttp 21476 13015773184 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59618
+INFO 2023-10-18 08:05:59,376 autoreload 21476 8631820864 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:05:59,740 autoreload 21484 8636060224 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:06:02,915 log 21484 13024018432 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    products = Order.products(customer=client)
+TypeError: 'ManyToManyDescriptor' object is not callable
+ERROR 2023-10-18 08:06:02,917 basehttp 21484 13024018432 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59546
+INFO 2023-10-18 08:07:00,030 autoreload 21484 8636060224 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:07:00,363 autoreload 21511 8637338176 Watching for file changes with StatReloader
+INFO 2023-10-18 08:07:04,047 basehttp 21511 13026426880 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1070
+INFO 2023-10-18 08:07:13,995 basehttp 21511 13026426880 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1037
+INFO 2023-10-18 08:17:47,977 autoreload 21511 8637338176 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:17:48,466 autoreload 21556 8598680128 Watching for file changes with StatReloader
+INFO 2023-10-18 08:20:50,395 autoreload 21556 8598680128 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:20:50,753 autoreload 21591 8633872960 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:20:54,528 log 21591 13018988544 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    products = Order.objects.filter(product=orders.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-10-18 08:20:54,528 basehttp 21591 13018988544 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59607
+INFO 2023-10-18 08:22:21,456 autoreload 21591 8633872960 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:22:21,809 autoreload 21611 8605798976 Watching for file changes with StatReloader
+INFO 2023-10-18 08:22:23,486 basehttp 21611 12966522880 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1067
+INFO 2023-10-18 08:27:00,070 autoreload 21611 8605798976 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:27:00,460 autoreload 21701 8673722944 Watching for file changes with StatReloader
+INFO 2023-10-18 08:28:34,043 autoreload 21701 8673722944 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:28:34,355 autoreload 21728 8604480064 Watching for file changes with StatReloader
+INFO 2023-10-18 08:28:36,822 basehttp 21728 12962713600 "GET /hw2/client_orders/1/ HTTP/1.1" 200 2116
+INFO 2023-10-18 08:30:52,376 autoreload 21728 8604480064 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:30:52,775 autoreload 21750 8636138048 Watching for file changes with StatReloader
+INFO 2023-10-18 08:31:24,431 autoreload 21750 8636138048 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:31:24,707 autoreload 21775 8606392896 Watching for file changes with StatReloader
+INFO 2023-10-18 08:31:28,632 basehttp 21775 12965457920 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1114
+INFO 2023-10-18 08:31:39,110 autoreload 21775 8606392896 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:31:39,491 autoreload 21780 8608428608 Watching for file changes with StatReloader
+INFO 2023-10-18 08:31:46,762 basehttp 21780 12967927808 "GET /hw2/client_orders/1/ HTTP/1.1" 200 2116
+INFO 2023-10-18 08:33:30,657 autoreload 21780 8608428608 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:33:31,025 autoreload 21808 8671322688 Watching for file changes with StatReloader
+INFO 2023-10-18 08:33:32,260 basehttp 21808 13096374272 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1979
+INFO 2023-10-18 08:34:54,680 autoreload 21808 8671322688 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:34:55,097 autoreload 21823 8595989056 Watching for file changes with StatReloader
+INFO 2023-10-18 08:35:01,753 autoreload 21830 8672670272 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:35:03,414 log 21830 13096984576 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.objects.filter(Order.pk == Product.pk)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1423, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable bool object
+ERROR 2023-10-18 08:35:03,452 basehttp 21830 13096984576 "GET /hw2/client_orders/1/ HTTP/1.1" 500 94488
+INFO 2023-10-18 08:35:46,600 autoreload 21830 8672670272 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:35:46,964 autoreload 21843 8642519616 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:35:51,116 log 21843 13036769280 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.objects.filter(Order.products == Product.pk)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1423, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable bool object
+ERROR 2023-10-18 08:35:51,123 basehttp 21843 13036769280 "GET /hw2/client_orders/1/ HTTP/1.1" 500 94508
+INFO 2023-10-18 08:36:31,962 autoreload 21843 8642519616 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:36:32,357 autoreload 21871 8663220800 Watching for file changes with StatReloader
+INFO 2023-10-18 08:36:37,259 autoreload 21881 8639832640 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:36:38,993 log 21881 13034168320 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.objects.filter(orders.products == Product.pk)
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 08:36:38,995 basehttp 21881 13034168320 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59644
+INFO 2023-10-18 08:37:07,929 autoreload 21881 8639832640 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:37:08,277 autoreload 21890 8663683648 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:37:10,906 log 21890 13079764992 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.objects.filter(orders.products)
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 08:37:10,907 basehttp 21890 13079764992 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59616
+INFO 2023-10-18 08:39:59,431 autoreload 21890 8663683648 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:39:59,799 autoreload 21921 8665498176 Watching for file changes with StatReloader
+INFO 2023-10-18 08:46:07,355 autoreload 21921 8665498176 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:46:07,782 autoreload 21970 8662475328 Watching for file changes with StatReloader
+INFO 2023-10-18 08:46:15,045 autoreload 21970 8662475328 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:46:15,347 autoreload 21976 8671973952 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:46:23,720 log 21976 13094993920 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = orders.products_set.all()
+AttributeError: 'QuerySet' object has no attribute 'products_set'
+ERROR 2023-10-18 08:46:23,721 basehttp 21976 13094993920 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59604
+INFO 2023-10-18 08:48:13,196 autoreload 21976 8671973952 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:48:13,679 autoreload 21994 8639459904 Watching for file changes with StatReloader
+INFO 2023-10-18 08:48:44,269 autoreload 21994 8639459904 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:48:44,680 autoreload 22001 8667640384 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:48:50,126 log 22001 13089488896 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.objects.filter(orders.pk == 1)
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR 2023-10-18 08:48:50,127 basehttp 22001 13089488896 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59590
+INFO 2023-10-18 08:49:57,123 autoreload 22001 8667640384 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:49:57,505 autoreload 22021 8662434368 Watching for file changes with StatReloader
+INFO 2023-10-18 08:50:00,866 basehttp 22021 13079642112 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1132
+INFO 2023-10-18 08:51:53,583 autoreload 22021 8662434368 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:51:53,954 autoreload 22054 8627831360 Watching for file changes with StatReloader
+INFO 2023-10-18 08:51:57,816 basehttp 22054 13009469440 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1115
+INFO 2023-10-18 08:53:41,050 autoreload 22054 8627831360 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:53:41,497 autoreload 22093 8663253568 Watching for file changes with StatReloader
+INFO 2023-10-18 08:55:46,946 autoreload 22093 8663253568 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:55:47,272 autoreload 22125 8604668480 Watching for file changes with StatReloader
+INFO 2023-10-18 08:57:23,241 autoreload 22125 8604668480 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:57:23,608 autoreload 22154 8595501632 Watching for file changes with StatReloader
+INFO 2023-10-18 08:58:38,190 autoreload 22154 8595501632 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:58:38,555 autoreload 22169 8601473600 Watching for file changes with StatReloader
+INFO 2023-10-18 08:59:26,688 autoreload 22169 8601473600 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:59:27,028 autoreload 22177 8633930304 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:59:31,797 log 22177 13020643328 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 34, in client_orders
+    prom = prod.order_set.all()
+AttributeError: 'QuerySet' object has no attribute 'order_set'
+ERROR 2023-10-18 08:59:31,798 basehttp 22177 13020643328 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60589
+INFO 2023-10-18 08:59:49,629 autoreload 22177 8633930304 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 08:59:49,965 autoreload 22188 8668025408 Watching for file changes with StatReloader
+ERROR 2023-10-18 08:59:51,677 log 22188 13087870976 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 34, in client_orders
+    prom = prod.order.set.all()
+AttributeError: 'QuerySet' object has no attribute 'order'
+ERROR 2023-10-18 08:59:51,678 basehttp 22188 13087870976 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60573
+INFO 2023-10-18 09:00:10,546 autoreload 22188 8668025408 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:00:10,861 autoreload 22195 8636265024 Watching for file changes with StatReloader
+INFO 2023-10-18 09:00:12,341 basehttp 22195 13027528704 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1979
+INFO 2023-10-18 09:00:42,587 basehttp 22195 13027528704 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1979
+INFO 2023-10-18 09:00:45,217 basehttp 22195 13027528704 "GET /hw2/ HTTP/1.1" 200 1457
+INFO 2023-10-18 09:06:15,970 autoreload 22195 8636265024 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:06:16,289 autoreload 22289 8635638336 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:06:24,155 log 22289 13025808384 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.order_set.all()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 09:06:24,155 basehttp 22289 13025808384 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59612
+INFO 2023-10-18 09:08:51,917 autoreload 22289 8635638336 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:08:52,265 autoreload 22312 8606786112 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:08:57,476 log 22312 12965744640 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.order_set.count()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'count'
+ERROR 2023-10-18 09:08:57,477 basehttp 22312 12965744640 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59624
+INFO 2023-10-18 09:10:06,028 autoreload 22312 8606786112 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:10:06,365 autoreload 22326 8626463296 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:10:11,248 log 22326 13006671872 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 34, in client_orders
+    prom = Order.order_set.count()
+AttributeError: type object 'Order' has no attribute 'order_set'
+ERROR 2023-10-18 09:10:11,249 basehttp 22326 13006671872 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59491
+INFO 2023-10-18 09:10:25,950 autoreload 22326 8626463296 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:10:26,304 autoreload 22334 8659608128 Watching for file changes with StatReloader
+INFO 2023-10-18 09:10:49,834 autoreload 22334 8659608128 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:10:50,205 autoreload 22344 8670933568 Watching for file changes with StatReloader
+INFO 2023-10-18 09:11:12,627 autoreload 22344 8670933568 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:11:12,972 autoreload 22347 8662544960 Watching for file changes with StatReloader
+INFO 2023-10-18 09:11:33,372 autoreload 22347 8662544960 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:11:33,697 autoreload 22351 8598647360 Watching for file changes with StatReloader
+INFO 2023-10-18 09:11:38,871 autoreload 22351 8598647360 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:11:39,150 autoreload 22355 8634753600 Watching for file changes with StatReloader
+WARNING 2023-10-18 09:11:43,166 log 22355 13022142464 Not Found: /hw2/client_orders/1/
+WARNING 2023-10-18 09:11:43,167 basehttp 22355 13022142464 "GET /hw2/client_orders/1/ HTTP/1.1" 404 3586
+INFO 2023-10-18 09:12:23,172 autoreload 22355 8634753600 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:12:23,518 autoreload 22379 8670118464 Watching for file changes with StatReloader
+INFO 2023-10-18 09:12:30,752 autoreload 22379 8670118464 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:12:31,061 autoreload 22388 8659518016 Watching for file changes with StatReloader
+WARNING 2023-10-18 09:12:35,047 log 22388 13073113088 Not Found: /hw2/client_orders/1/
+WARNING 2023-10-18 09:12:35,048 basehttp 22388 13073113088 "GET /hw2/client_orders/1/ HTTP/1.1" 404 3586
+WARNING 2023-10-18 09:12:37,393 log 22388 13073113088 Not Found: /hw2/client_orders/1/
+WARNING 2023-10-18 09:12:37,394 basehttp 22388 13073113088 "GET /hw2/client_orders/1/ HTTP/1.1" 404 3586
+INFO 2023-10-18 09:12:53,626 autoreload 22388 8659518016 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:12:53,953 autoreload 22393 8663224896 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:12:57,752 log 22393 13078401024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.order_set.all()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 09:12:57,753 basehttp 22393 13078401024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59612
+INFO 2023-10-18 09:21:23,018 autoreload 22393 8663224896 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:21:23,397 autoreload 22482 8632160832 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:21:26,416 log 22482 13016563712 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    prom = Product.order_set.in_bulk()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'in_bulk'
+ERROR 2023-10-18 09:21:26,417 basehttp 22482 13016563712 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59636
+INFO 2023-10-18 09:21:50,044 autoreload 22482 8632160832 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:21:50,339 autoreload 22491 8658928192 Watching for file changes with StatReloader
+INFO 2023-10-18 09:21:52,050 basehttp 22491 13072756736 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1993
+INFO 2023-10-18 09:22:22,110 autoreload 22491 8658928192 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:22:22,435 autoreload 22496 8635863616 Watching for file changes with StatReloader
+INFO 2023-10-18 09:22:22,918 basehttp 22496 13026279424 "GET /hw2/client_orders/1/ HTTP/1.1" 200 2142
+INFO 2023-10-18 09:23:50,149 autoreload 22496 8635863616 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:23:50,815 autoreload 22550 8600752704 Watching for file changes with StatReloader
+INFO 2023-10-18 09:24:43,994 autoreload 22550 8600752704 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:24:44,332 autoreload 22597 8670691904 Watching for file changes with StatReloader
+INFO 2023-10-18 09:24:47,536 basehttp 22597 13095014400 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1094
+INFO 2023-10-18 09:26:13,203 autoreload 22597 8670691904 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:26:13,528 autoreload 22628 8630821440 Watching for file changes with StatReloader
+INFO 2023-10-18 09:26:14,879 basehttp 22628 13016293376 "GET /hw2/client_orders/1/ HTTP/1.1" 200 2142
+INFO 2023-10-18 09:30:39,947 autoreload 22628 8630821440 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:30:40,346 autoreload 22663 8600195648 Watching for file changes with StatReloader
+INFO 2023-10-18 09:30:52,669 autoreload 22663 8600195648 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:30:52,959 autoreload 22675 8594448960 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:30:56,106 log 22675 12942565376 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = Order.objects.get(pk=1).products.pk
+AttributeError: 'ManyRelatedManager' object has no attribute 'pk'
+ERROR 2023-10-18 09:30:56,107 basehttp 22675 12942565376 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59433
+INFO 2023-10-18 09:31:12,428 autoreload 22675 8594448960 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:31:12,754 autoreload 22686 8640770624 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:31:14,958 log 22686 13035331584 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = Order.objects.get(id=1).products.id
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+ERROR 2023-10-18 09:31:14,961 basehttp 22686 13035331584 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59433
+INFO 2023-10-18 09:31:29,283 autoreload 22686 8640770624 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:31:29,679 autoreload 22694 8664142400 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:31:30,564 log 22694 13081645056 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = Order.objects.get(pk=1).products.id
+AttributeError: 'ManyRelatedManager' object has no attribute 'id'
+ERROR 2023-10-18 09:31:30,565 basehttp 22694 13081645056 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59433
+INFO 2023-10-18 09:32:40,447 autoreload 22694 8664142400 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:32:40,870 autoreload 22704 8632152640 Watching for file changes with StatReloader
+INFO 2023-10-18 09:32:46,883 autoreload 22709 8598196800 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:32:49,355 log 22709 12948402176 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = Order.objects.get(pk=1).product.id
+AttributeError: 'Order' object has no attribute 'product'
+ERROR 2023-10-18 09:32:49,356 basehttp 22709 12948402176 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59399
+INFO 2023-10-18 09:33:08,411 autoreload 22709 8598196800 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:33:08,722 autoreload 22727 8643236416 Watching for file changes with StatReloader
+INFO 2023-10-18 09:33:10,387 basehttp 22727 13037608960 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1055
+INFO 2023-10-18 09:37:30,212 autoreload 22727 8643236416 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:37:30,549 autoreload 22768 8636146240 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:37:34,027 log 22768 13024264192 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = order.products.set()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 09:37:34,028 basehttp 22768 13024264192 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60032
+INFO 2023-10-18 09:38:12,453 autoreload 22768 8636146240 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:38:12,891 autoreload 22791 8665621056 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:38:25,906 log 22791 13082640384 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Order'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = order.products.set(orders)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/related_descriptors.py", line 1228, in set
+    else self.target_field.get_prep_value(obj)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/related.py", line 1135, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Order: Total_price:2000.00, date_order:2023-10-18 07:02:42.320308+00:00>.
+ERROR 2023-10-18 09:38:25,912 basehttp 22791 13082640384 "GET /hw2/client_orders/1/ HTTP/1.1" 500 77484
+INFO 2023-10-18 09:39:36,752 autoreload 22791 8665621056 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:39:37,105 autoreload 22855 8662463040 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:39:38,945 log 22855 13078769664 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = order.products_set.all()
+AttributeError: 'Order' object has no attribute 'products_set'
+ERROR 2023-10-18 09:39:38,945 basehttp 22855 13078769664 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59806
+INFO 2023-10-18 09:39:49,503 autoreload 22855 8662463040 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:39:49,808 autoreload 22864 8631927360 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:39:51,202 log 22864 13017104384 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = orders.products_set.all()
+AttributeError: 'QuerySet' object has no attribute 'products_set'
+ERROR 2023-10-18 09:39:51,204 basehttp 22864 13017104384 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59591
+INFO 2023-10-18 09:41:09,521 autoreload 22864 8631927360 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:41:09,910 autoreload 22903 8641942080 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:41:34,893 log 22903 13035905024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:41:34,894 basehttp 22903 13035905024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59579
+ERROR 2023-10-18 09:44:41,587 log 22903 13035905024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 35, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:44:41,588 basehttp 22903 13035905024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59579
+INFO 2023-10-18 09:46:18,502 autoreload 22903 8641942080 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:46:18,861 autoreload 22963 8633512512 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:46:21,804 log 22963 13020524544 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 09:46:21,805 basehttp 22963 13020524544 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59835
+ERROR 2023-10-18 09:46:23,159 log 22963 13020524544 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 09:46:23,160 basehttp 22963 13020524544 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59835
+INFO 2023-10-18 09:46:58,782 autoreload 22963 8633512512 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:46:59,190 autoreload 22974 8594973248 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:47:00,671 log 22974 12944809984 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products_set.all()
+AttributeError: 'Order' object has no attribute 'products_set'
+ERROR 2023-10-18 09:47:00,671 basehttp 22974 12944809984 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59597
+ERROR 2023-10-18 09:47:02,139 log 22974 12944809984 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products_set.all()
+AttributeError: 'Order' object has no attribute 'products_set'
+ERROR 2023-10-18 09:47:02,140 basehttp 22974 12944809984 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59597
+INFO 2023-10-18 09:48:03,528 autoreload 22974 8594973248 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:48:03,915 autoreload 22987 8595698240 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:48:07,491 log 22987 12943200256 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    orders = Order.objects.get(pk=1).product.name
+AttributeError: 'Order' object has no attribute 'product'
+ERROR 2023-10-18 09:48:07,491 basehttp 22987 12943200256 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59964
+ERROR 2023-10-18 09:48:08,873 log 22987 12943200256 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    orders = Order.objects.get(pk=1).product.name
+AttributeError: 'Order' object has no attribute 'product'
+ERROR 2023-10-18 09:48:08,874 basehttp 22987 12943200256 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59964
+INFO 2023-10-18 09:48:24,400 autoreload 22987 8595698240 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:48:24,703 autoreload 23003 8605020736 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:48:26,685 log 23003 12962447360 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'NoneType' object has no attribute 'products'
+ERROR 2023-10-18 09:48:26,686 basehttp 23003 12962447360 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59537
+INFO 2023-10-18 09:49:25,050 autoreload 23003 8605020736 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:49:25,388 autoreload 23012 8594760256 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:49:27,943 log 23012 12942274560 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 38, in client_orders
+    return render(request, 'hw2/client_orders.html', {'client': client, 'orders': orders, 'prom': prom})
+NameError: name 'prom' is not defined
+ERROR 2023-10-18 09:49:27,944 basehttp 23012 12942274560 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59113
+INFO 2023-10-18 09:49:58,084 autoreload 23012 8594760256 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:49:58,453 autoreload 23022 8637846080 Watching for file changes with StatReloader
+INFO 2023-10-18 09:50:02,077 basehttp 23022 13029543936 "GET /hw2/client_orders/1/ HTTP/1.1" 200 914
+INFO 2023-10-18 09:51:12,755 autoreload 23022 8637846080 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:51:13,068 autoreload 23056 8635052608 Watching for file changes with StatReloader
+INFO 2023-10-18 09:51:15,197 basehttp 23056 13023285248 "GET /hw2/client_orders/1/ HTTP/1.1" 200 914
+INFO 2023-10-18 09:51:16,172 basehttp 23056 13023285248 "GET /hw2/client_orders/1/ HTTP/1.1" 200 914
+INFO 2023-10-18 09:51:32,517 autoreload 23056 8635052608 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:51:32,844 autoreload 23065 8660660800 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:51:35,191 log 23065 13076180992 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 38, in client_orders
+    return render(request, 'hw2/client_orders.html', {'client': client, 'orders': orders, 'prom': prom})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'Order' object is not iterable
+ERROR 2023-10-18 09:51:35,202 basehttp 23065 13076180992 "GET /hw2/client_orders/1/ HTTP/1.1" 500 140358
+INFO 2023-10-18 09:53:06,765 autoreload 23065 8660660800 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:53:07,146 autoreload 23089 8598843968 Watching for file changes with StatReloader
+INFO 2023-10-18 09:53:10,680 basehttp 23089 12949266432 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1051
+INFO 2023-10-18 09:53:59,210 autoreload 23089 8598843968 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:53:59,530 autoreload 23110 8593732160 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:54:02,553 log 23110 12940603392 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set()
+AttributeError: 'NoneType' object has no attribute 'products'
+ERROR 2023-10-18 09:54:02,554 basehttp 23110 12940603392 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59782
+INFO 2023-10-18 09:54:22,108 autoreload 23110 8593732160 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:54:22,487 autoreload 23120 8631558720 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:54:24,831 log 23120 13015306240 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    order = Order.objects.get().products.name
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+hw2.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 13!
+ERROR 2023-10-18 09:54:24,834 basehttp 23120 13015306240 "GET /hw2/client_orders/1/ HTTP/1.1" 500 70720
+INFO 2023-10-18 09:54:34,842 autoreload 23120 8631558720 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:54:35,194 autoreload 23129 8627388992 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:54:37,322 log 23129 13008912384 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    order = Order.objects.all().products.name
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:54:37,323 basehttp 23129 13008912384 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60215
+INFO 2023-10-18 09:55:01,728 autoreload 23129 8627388992 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:55:02,022 autoreload 23145 8596763200 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:55:04,154 log 23145 12944547840 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:55:04,154 basehttp 23145 12944547840 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60814
+INFO 2023-10-18 09:55:25,666 autoreload 23145 8596763200 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:55:26,005 autoreload 23160 8628699712 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:55:28,250 log 23160 13009973248 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:55:28,250 basehttp 23160 13009973248 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 09:55:29,348 log 23160 13009973248 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:55:29,348 basehttp 23160 13009973248 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 09:55:30,355 log 23160 13009973248 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:55:30,356 basehttp 23160 13009973248 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 09:55:31,409 log 23160 13009973248 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:55:31,410 basehttp 23160 13009973248 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 09:55:32,266 log 23160 13009973248 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:55:32,267 basehttp 23160 13009973248 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+INFO 2023-10-18 09:56:59,950 autoreload 23160 8628699712 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:57:00,311 autoreload 23172 8674316864 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:57:02,373 log 23172 13103435776 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 09:57:02,374 basehttp 23172 13103435776 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60081
+INFO 2023-10-18 09:57:17,807 autoreload 23172 8674316864 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:57:18,109 autoreload 23185 8625148480 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:57:20,128 log 23185 13004894208 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 09:57:20,129 basehttp 23185 13004894208 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60069
+ERROR 2023-10-18 09:57:20,879 log 23185 13004894208 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 09:57:20,880 basehttp 23185 13004894208 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60069
+INFO 2023-10-18 09:57:41,710 autoreload 23185 8625148480 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:57:42,065 autoreload 23194 8633942592 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:57:44,242 log 23194 13020925952 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:57:44,242 basehttp 23194 13020925952 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59874
+INFO 2023-10-18 09:58:44,250 autoreload 23194 8633942592 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:58:44,632 autoreload 23214 8666571328 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:58:47,504 log 23214 13087199232 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:58:47,505 basehttp 23214 13087199232 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 09:58:48,646 log 23214 13087199232 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:58:48,647 basehttp 23214 13087199232 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 09:58:49,610 log 23214 13087199232 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:58:49,611 basehttp 23214 13087199232 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+INFO 2023-10-18 09:59:08,261 autoreload 23214 8666571328 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 09:59:08,602 autoreload 23220 8668033600 Watching for file changes with StatReloader
+ERROR 2023-10-18 09:59:17,801 log 23220 13089153024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:59:17,802 basehttp 23220 13089153024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60828
+ERROR 2023-10-18 09:59:18,750 log 23220 13089153024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 09:59:18,750 basehttp 23220 13089153024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60828
+ERROR 2023-10-18 10:00:46,339 log 23220 13089153024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 10:00:46,339 basehttp 23220 13089153024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60828
+ERROR 2023-10-18 10:01:51,860 log 23220 13089153024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 10:01:51,861 basehttp 23220 13089153024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60828
+INFO 2023-10-18 10:02:12,750 autoreload 23220 8668033600 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 10:02:13,102 autoreload 23251 8635990592 Watching for file changes with StatReloader
+ERROR 2023-10-18 10:02:16,009 log 23251 13023633408 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    order = Order.objects.all().product.name
+AttributeError: 'QuerySet' object has no attribute 'product'
+ERROR 2023-10-18 10:02:16,010 basehttp 23251 13023633408 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60216
+ERROR 2023-10-18 10:02:17,121 log 23251 13023633408 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    order = Order.objects.all().product.name
+AttributeError: 'QuerySet' object has no attribute 'product'
+ERROR 2023-10-18 10:02:17,122 basehttp 23251 13023633408 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60216
+INFO 2023-10-18 10:02:26,449 autoreload 23251 8635990592 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 10:02:26,737 autoreload 23263 8595153472 Watching for file changes with StatReloader
+ERROR 2023-10-18 10:02:28,790 log 23263 12941471744 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    order = Order.objects.all().product.name
+AttributeError: 'QuerySet' object has no attribute 'product'
+ERROR 2023-10-18 10:02:28,790 basehttp 23263 12941471744 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60215
+ERROR 2023-10-18 10:02:30,111 log 23263 12941471744 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 33, in client_orders
+    order = Order.objects.all().product.name
+AttributeError: 'QuerySet' object has no attribute 'product'
+ERROR 2023-10-18 10:02:30,112 basehttp 23263 12941471744 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60215
+INFO 2023-10-18 10:02:38,049 autoreload 23263 8595153472 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 10:02:38,370 autoreload 23278 8632173120 Watching for file changes with StatReloader
+ERROR 2023-10-18 10:02:40,612 log 23278 13017632768 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 10:02:40,613 basehttp 23278 13017632768 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+ERROR 2023-10-18 10:02:41,739 log 23278 13017632768 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 10:02:41,739 basehttp 23278 13017632768 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60826
+INFO 2023-10-18 10:03:14,132 autoreload 23278 8632173120 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 10:03:14,487 autoreload 23291 8632926784 Watching for file changes with StatReloader
+ERROR 2023-10-18 10:03:16,620 log 23291 13020545024 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 10:03:16,621 basehttp 23291 13020545024 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60081
+INFO 2023-10-18 10:06:24,062 autoreload 23291 8632926784 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/models.py changed, reloading.
+INFO 2023-10-18 10:06:24,431 autoreload 23313 8664351296 Watching for file changes with StatReloader
+INFO 2023-10-18 10:06:56,932 autoreload 23313 8664351296 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/models.py changed, reloading.
+INFO 2023-10-18 10:06:57,305 autoreload 23337 8673616448 Watching for file changes with StatReloader
+ERROR 2023-10-18 10:06:59,132 log 23337 13099786240 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 10:06:59,133 basehttp 23337 13099786240 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60081
+ERROR 2023-10-18 10:27:01,005 log 23337 13099786240 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.products.set().all()
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() missing 1 required positional argument: 'objs'
+ERROR 2023-10-18 10:27:01,010 basehttp 23337 13099786240 "GET /hw2/client_orders/1/ HTTP/1.1" 500 60081
+INFO 2023-10-18 10:59:21,831 autoreload 23337 8673616448 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 10:59:22,240 autoreload 23828 8637182528 Watching for file changes with StatReloader
+ERROR 2023-10-18 10:59:29,947 log 23828 13027958784 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products.all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 10:59:29,948 basehttp 23828 13027958784 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59604
+INFO 2023-10-18 11:03:19,467 autoreload 23828 8637182528 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:03:19,782 autoreload 23865 8639828544 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:03:23,720 log 23865 13031428096 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.products_set.all()
+AttributeError: 'QuerySet' object has no attribute 'products_set'
+ERROR 2023-10-18 11:03:23,721 basehttp 23865 13031428096 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59628
+INFO 2023-10-18 11:04:00,625 autoreload 23865 8639828544 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:04:00,942 autoreload 23879 8629649984 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:04:02,416 log 23879 13013864448 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.product_set.all()
+AttributeError: 'QuerySet' object has no attribute 'product_set'
+ERROR 2023-10-18 11:04:02,417 basehttp 23879 13013864448 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59622
+ERROR 2023-10-18 11:04:03,999 log 23879 13013864448 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.product_set.all()
+AttributeError: 'QuerySet' object has no attribute 'product_set'
+ERROR 2023-10-18 11:04:04,000 basehttp 23879 13013864448 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59622
+ERROR 2023-10-18 11:04:04,171 log 23879 13013864448 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.product_set.all()
+AttributeError: 'QuerySet' object has no attribute 'product_set'
+ERROR 2023-10-18 11:04:04,172 basehttp 23879 13013864448 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59622
+ERROR 2023-10-18 11:04:04,364 log 23879 13013864448 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = orders.product_set.all()
+AttributeError: 'QuerySet' object has no attribute 'product_set'
+ERROR 2023-10-18 11:04:04,365 basehttp 23879 13013864448 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59622
+INFO 2023-10-18 11:04:25,572 autoreload 23879 8629649984 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:04:25,875 autoreload 23887 8663470656 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:04:32,312 log 23887 13078925312 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = order.product_set.all()
+AttributeError: 'Order' object has no attribute 'product_set'
+ERROR 2023-10-18 11:04:32,312 basehttp 23887 13078925312 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59837
+INFO 2023-10-18 11:05:48,505 autoreload 23887 8663470656 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:05:48,827 autoreload 23932 8632230464 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:05:51,781 log 23932 13017280512 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = Product.order_set.all()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 11:05:51,782 basehttp 23932 13017280512 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59865
+INFO 2023-10-18 11:06:01,221 autoreload 23932 8632230464 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:06:01,522 autoreload 23938 8592515648 Watching for file changes with StatReloader
+INFO 2023-10-18 11:06:04,397 basehttp 23938 12939407360 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1145
+INFO 2023-10-18 11:06:39,397 autoreload 23938 8592515648 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:06:39,747 autoreload 23965 8665821760 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:06:39,930 log 23965 13086064640 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = Product.order_set.name
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'name'
+ERROR 2023-10-18 11:06:39,931 basehttp 23965 13086064640 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59867
+INFO 2023-10-18 11:07:32,748 autoreload 23965 8665821760 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:07:33,251 autoreload 24043 8671162944 Watching for file changes with StatReloader
+INFO 2023-10-18 11:07:38,002 basehttp 24043 13096038400 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1145
+INFO 2023-10-18 11:08:00,962 autoreload 24043 8671162944 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:08:01,269 autoreload 24062 8594170432 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:08:04,020 log 24062 12942979072 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = Product.order_set.all
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 11:08:04,021 basehttp 24062 12942979072 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59632
+INFO 2023-10-18 11:08:13,699 autoreload 24062 8594170432 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:08:14,023 autoreload 24070 8592142912 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:08:16,694 log 24070 12938792960 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = Product.order_set.all()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 11:08:16,695 basehttp 24070 12938792960 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59636
+INFO 2023-10-18 11:08:29,512 autoreload 24070 8592142912 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:08:29,828 autoreload 24075 8604623424 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:08:30,720 log 24075 12963680256 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    prom = Product.order_set.all(pk=1)
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 11:08:30,721 basehttp 24075 12963680256 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59644
+INFO 2023-10-18 11:08:42,240 autoreload 24075 8604623424 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:08:42,531 autoreload 24083 8636154432 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:08:44,002 log 24083 13024722944 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 38, in client_orders
+    return render(request, 'hw2/client_orders.html', {'client': client, 'orders': orders, 'prom': prom})
+NameError: name 'prom' is not defined
+ERROR 2023-10-18 11:08:44,002 basehttp 24083 13024722944 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59183
+ERROR 2023-10-18 11:08:54,872 log 24083 13024722944 Internal Server Error: /hw2/client_orders/1/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 38, in client_orders
+    return render(request, 'hw2/client_orders.html', {'client': client, 'orders': orders, 'prom': 'prom'})
+NameError: name 'prom' is not defined
+ERROR 2023-10-18 11:08:54,873 basehttp 24083 13024722944 "GET /hw2/client_orders/1/ HTTP/1.1" 500 59207
+INFO 2023-10-18 11:08:54,942 autoreload 24083 8636154432 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:08:55,351 autoreload 24089 8663548480 Watching for file changes with StatReloader
+INFO 2023-10-18 11:09:04,640 autoreload 24089 8663548480 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:09:04,939 autoreload 24094 8640705088 Watching for file changes with StatReloader
+INFO 2023-10-18 11:09:06,162 basehttp 24094 13034876928 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1051
+INFO 2023-10-18 11:09:13,639 basehttp 24094 13034876928 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1734
+INFO 2023-10-18 11:09:42,839 autoreload 24094 8640705088 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:09:43,171 autoreload 24103 8665383488 Watching for file changes with StatReloader
+INFO 2023-10-18 11:09:44,860 basehttp 24103 13084958720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1734
+INFO 2023-10-18 11:09:47,558 basehttp 24103 13084958720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1734
+INFO 2023-10-18 11:09:52,903 basehttp 24103 13084958720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2298
+INFO 2023-10-18 11:10:13,642 basehttp 24103 13084958720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1734
+INFO 2023-10-18 11:10:18,670 basehttp 24103 13084958720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1734
+INFO 2023-10-18 11:10:20,573 basehttp 24103 13084958720 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2298
+INFO 2023-10-18 11:11:05,847 autoreload 24103 8665383488 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:11:06,263 autoreload 24128 8664040000 Watching for file changes with StatReloader
+INFO 2023-10-18 11:11:06,754 basehttp 24128 13081395200 "GET /hw2/client_orders/7/ HTTP/1.1" 200 8280
+INFO 2023-10-18 11:11:30,885 autoreload 24128 8664040000 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:11:31,323 autoreload 24136 8599511616 Watching for file changes with StatReloader
+INFO 2023-10-18 11:19:20,976 autoreload 24136 8599511616 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:19:21,383 autoreload 24219 8664719936 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:19:23,486 log 24219 13082378240 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 34, in client_orders
+    prom = orders.products.all()
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 11:19:23,487 basehttp 24219 13082378240 "GET /hw2/client_orders/7/ HTTP/1.1" 500 59915
+INFO 2023-10-18 11:21:34,311 autoreload 24219 8664719936 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:21:34,649 autoreload 24242 8604095040 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:21:39,075 log 24242 12960485376 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 34, in client_orders
+    prom = Product.order_set.all()
+AttributeError: 'ManyToManyDescriptor' object has no attribute 'all'
+ERROR 2023-10-18 11:21:39,076 basehttp 24242 12960485376 "GET /hw2/client_orders/7/ HTTP/1.1" 500 59947
+INFO 2023-10-18 11:23:33,170 autoreload 24242 8604095040 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:23:33,484 autoreload 24261 8629314112 Watching for file changes with StatReloader
+INFO 2023-10-18 11:23:38,458 basehttp 24261 13010628608 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2436
+INFO 2023-10-18 11:26:36,141 autoreload 24261 8629314112 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:26:36,497 autoreload 24295 8634409536 Watching for file changes with StatReloader
+INFO 2023-10-18 11:26:37,987 basehttp 24295 13023711232 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 11:28:06,502 autoreload 24295 8634409536 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:28:06,845 autoreload 24313 8634507840 Watching for file changes with StatReloader
+INFO 2023-10-18 11:28:08,405 basehttp 24313 13021679616 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1950
+INFO 2023-10-18 11:28:25,332 autoreload 24313 8634507840 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:28:25,809 autoreload 24321 8633913920 Watching for file changes with StatReloader
+INFO 2023-10-18 11:28:32,688 autoreload 24327 8674882112 Watching for file changes with StatReloader
+INFO 2023-10-18 11:28:34,706 basehttp 24327 13103468544 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 11:30:26,076 autoreload 24327 8674882112 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:30:26,408 autoreload 24348 8668430912 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:30:29,436 log 24348 13091221504 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 37, in client_orders
+    prom.append(order.products.name.all())
+AttributeError: 'NoneType' object has no attribute 'all'
+ERROR 2023-10-18 11:30:29,437 basehttp 24348 13091221504 "GET /hw2/client_orders/7/ HTTP/1.1" 500 60222
+INFO 2023-10-18 11:30:43,895 autoreload 24348 8668430912 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:30:44,220 autoreload 24355 8659825216 Watching for file changes with StatReloader
+INFO 2023-10-18 11:30:46,112 basehttp 24355 13072822272 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 11:31:14,036 autoreload 24355 8659825216 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:31:14,336 autoreload 24360 8594059840 Watching for file changes with StatReloader
+INFO 2023-10-18 11:31:16,564 basehttp 24360 12941762560 "GET /hw2/client_orders/7/ HTTP/1.1" 200 6954
+INFO 2023-10-18 11:31:34,985 autoreload 24360 8594059840 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:31:35,311 autoreload 24368 8604885568 Watching for file changes with StatReloader
+INFO 2023-10-18 11:31:36,442 basehttp 24368 12964548608 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1842
+INFO 2023-10-18 11:31:56,960 autoreload 24368 8604885568 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:31:57,281 autoreload 24375 8639078976 Watching for file changes with StatReloader
+INFO 2023-10-18 11:31:58,645 basehttp 24375 13030703104 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5202
+INFO 2023-10-18 11:32:14,801 autoreload 24375 8639078976 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:32:15,141 autoreload 24381 8631317056 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:32:16,264 log 24381 13016571904 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 37, in client_orders
+    prom.append(order.products.all()[0][0])
+TypeError: 'Product' object is not subscriptable
+ERROR 2023-10-18 11:32:16,265 basehttp 24381 13016571904 "GET /hw2/client_orders/7/ HTTP/1.1" 500 60142
+INFO 2023-10-18 11:32:27,531 autoreload 24381 8631317056 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:32:27,838 autoreload 24391 8592593472 Watching for file changes with StatReloader
+INFO 2023-10-18 11:32:30,730 basehttp 24391 12939448320 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 11:33:30,469 basehttp 24391 12939448320 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 11:33:31,026 autoreload 24391 8592593472 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:33:31,385 autoreload 24405 8607060544 Watching for file changes with StatReloader
+ERROR 2023-10-18 11:33:31,745 log 24405 12967657472 Internal Server Error: /hw2/client_orders/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 36, in client_orders
+    for order in orders.products.name:
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-18 11:33:31,745 basehttp 24405 12967657472 "GET /hw2/client_orders/7/ HTTP/1.1" 500 60125
+INFO 2023-10-18 11:33:53,969 autoreload 24405 8607060544 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 11:33:54,393 autoreload 24410 8600715840 Watching for file changes with StatReloader
+INFO 2023-10-18 11:33:58,367 basehttp 24410 12953493504 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 11:34:20,150 autoreload 24420 8631513664 Watching for file changes with StatReloader
+INFO 2023-10-18 11:34:22,008 basehttp 24420 13017759744 "GET /hw2/client_orders/7/ HTTP/1.1" 200 1734
+INFO 2023-10-18 11:35:03,974 basehttp 24420 13017759744 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5886
+INFO 2023-10-18 12:01:57,260 autoreload 24420 8631513664 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:01:57,731 autoreload 24772 8641045056 Watching for file changes with StatReloader
+INFO 2023-10-18 12:03:58,764 autoreload 24772 8641045056 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 12:03:59,161 autoreload 24803 8600818240 Watching for file changes with StatReloader
+INFO 2023-10-18 12:04:32,866 autoreload 24803 8600818240 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 12:04:33,222 autoreload 24817 8670913088 Watching for file changes with StatReloader
+INFO 2023-10-18 12:04:52,729 basehttp 24817 13093228544 "GET / HTTP/1.1" 200 235
+WARNING 2023-10-18 12:04:52,829 log 24817 13093228544 Not Found: /favicon.ico
+WARNING 2023-10-18 12:04:52,829 basehttp 24817 13093228544 "GET /favicon.ico HTTP/1.1" 404 2544
+INFO 2023-10-18 12:04:56,435 basehttp 24817 13093228544 "GET /hw2 HTTP/1.1" 301 0
+INFO 2023-10-18 12:04:56,453 basehttp 24817 13110018048 "GET /hw2/ HTTP/1.1" 200 1457
+WARNING 2023-10-18 12:04:59,892 log 24817 13110018048 Not Found: /hw2/client
+WARNING 2023-10-18 12:04:59,893 basehttp 24817 13110018048 "GET /hw2/client HTTP/1.1" 404 3589
+INFO 2023-10-18 12:05:12,000 basehttp 24817 13093228544 "GET /hw2/client/7 HTTP/1.1" 301 0
+ERROR 2023-10-18 12:05:12,058 log 24817 13110018048 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/user_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/user_all_orders.html
+ERROR 2023-10-18 12:05:12,059 basehttp 24817 13110018048 "GET /hw2/client/7/ HTTP/1.1" 500 78730
+INFO 2023-10-18 12:06:02,206 autoreload 24817 8670913088 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:06:02,573 autoreload 24856 8667112000 Watching for file changes with StatReloader
+ERROR 2023-10-18 12:06:10,133 log 24856 13088104448 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/client_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/client_all_orders.html
+ERROR 2023-10-18 12:06:10,135 basehttp 24856 13088104448 "GET /hw2/client/7/ HTTP/1.1" 500 78899
+ERROR 2023-10-18 12:06:11,216 log 24856 13088104448 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/client_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/client_all_orders.html
+ERROR 2023-10-18 12:06:11,217 basehttp 24856 13088104448 "GET /hw2/client/7/ HTTP/1.1" 500 78899
+ERROR 2023-10-18 12:06:11,485 log 24856 13088104448 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/client_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/client_all_orders.html
+ERROR 2023-10-18 12:06:11,487 basehttp 24856 13088104448 "GET /hw2/client/7/ HTTP/1.1" 500 78899
+ERROR 2023-10-18 12:06:11,735 log 24856 13088104448 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/client_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/client_all_orders.html
+ERROR 2023-10-18 12:06:11,735 basehttp 24856 13088104448 "GET /hw2/client/7/ HTTP/1.1" 500 78899
+ERROR 2023-10-18 12:06:11,944 log 24856 13088104448 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/client_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/client_all_orders.html
+ERROR 2023-10-18 12:06:11,944 basehttp 24856 13088104448 "GET /hw2/client/7/ HTTP/1.1" 500 78899
+ERROR 2023-10-18 12:06:12,148 log 24856 13088104448 Internal Server Error: /hw2/client/7/
+Traceback (most recent call last):
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py", line 48, in basket
+    return render(request, 'hw_2/client_all_orders.html', {'client': client, 'orders': orders, 'products': products})
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/denisvoropaev/PycharmProjects/django-hw/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_2/client_all_orders.html
+ERROR 2023-10-18 12:06:12,148 basehttp 24856 13088104448 "GET /hw2/client/7/ HTTP/1.1" 500 78899
+INFO 2023-10-18 12:07:07,835 autoreload 24856 8667112000 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:07:08,174 autoreload 24882 8628503104 Watching for file changes with StatReloader
+INFO 2023-10-18 12:07:09,772 basehttp 24882 13008838656 "GET /hw2/client/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:08:31,934 basehttp 24882 13008838656 "GET /hw2/client/7/ HTTP/1.1" 200 1701
+INFO 2023-10-18 12:08:47,670 basehttp 24882 13008838656 "GET /hw2/client/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:12:28,015 autoreload 24882 8628503104 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:12:28,392 autoreload 24948 8599753280 Watching for file changes with StatReloader
+INFO 2023-10-18 12:12:47,846 basehttp 24948 12951257088 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:13:05,000 basehttp 24948 12951257088 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:13:39,326 basehttp 24948 12951257088 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:13:39,745 autoreload 24948 8599753280 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 12:13:40,089 autoreload 24983 8605205056 Watching for file changes with StatReloader
+INFO 2023-10-18 12:13:40,874 basehttp 24983 12962578432 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:13:41,737 basehttp 24983 12962578432 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:13:50,985 autoreload 24995 8600547904 Watching for file changes with StatReloader
+INFO 2023-10-18 12:13:52,627 basehttp 24995 12956000256 "GET / HTTP/1.1" 200 235
+INFO 2023-10-18 12:13:55,211 basehttp 24995 12956000256 "GET / HTTP/1.1" 200 235
+INFO 2023-10-18 12:13:56,252 basehttp 24995 12956000256 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1156
+INFO 2023-10-18 12:13:56,458 basehttp 24995 12956000256 "GET /hw2/ HTTP/1.1" 200 1457
+INFO 2023-10-18 12:14:00,721 basehttp 24995 12956000256 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1156
+INFO 2023-10-18 12:14:03,646 basehttp 24995 12956000256 "GET /hw2/client_orders/5 HTTP/1.1" 301 0
+INFO 2023-10-18 12:14:03,668 basehttp 24995 12956000256 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1637
+INFO 2023-10-18 12:14:20,383 basehttp 24995 12972789760 "GET /hw2/client/7/ HTTP/1.1" 200 2414
+INFO 2023-10-18 12:15:25,975 autoreload 24995 8600547904 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:15:26,309 autoreload 25031 8595997248 Watching for file changes with StatReloader
+INFO 2023-10-18 12:15:28,385 autoreload 25035 8668672576 Watching for file changes with StatReloader
+INFO 2023-10-18 12:15:30,930 basehttp 25035 13090181120 "GET /hw2/client/7/ HTTP/1.1" 200 2381
+INFO 2023-10-18 12:15:43,428 basehttp 25035 13090181120 "GET /hw2/client_orders/5 HTTP/1.1" 301 0
+INFO 2023-10-18 12:15:43,442 basehttp 25035 13106970624 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1655
+INFO 2023-10-18 12:16:29,766 basehttp 25035 13090181120 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1168
+INFO 2023-10-18 12:16:43,342 basehttp 25035 13090181120 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2414
+INFO 2023-10-18 12:17:20,149 autoreload 25035 8668672576 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:17:20,515 autoreload 25046 8607662656 Watching for file changes with StatReloader
+INFO 2023-10-18 12:20:17,161 autoreload 25046 8607662656 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:20:17,480 autoreload 25091 8671126080 Watching for file changes with StatReloader
+INFO 2023-10-18 12:20:51,172 autoreload 25091 8671126080 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/urls.py changed, reloading.
+INFO 2023-10-18 12:20:51,603 autoreload 25103 8598999616 Watching for file changes with StatReloader
+INFO 2023-10-18 12:20:54,630 basehttp 25103 12950802432 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1667
+INFO 2023-10-18 12:21:25,101 basehttp 25103 12950802432 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1667
+INFO 2023-10-18 12:21:26,152 basehttp 25103 12950802432 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1646
+INFO 2023-10-18 12:21:46,012 basehttp 25103 12950802432 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:47,039 basehttp 25103 12950802432 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:47,634 basehttp 25103 12950802432 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:52,885 autoreload 25119 8592831040 Watching for file changes with StatReloader
+INFO 2023-10-18 12:21:54,814 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:55,554 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:55,803 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:56,019 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:56,207 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:56,424 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:56,651 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:56,871 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:21:57,120 basehttp 25119 12939771904 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:22:17,758 basehttp 25119 12939771904 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2510
+INFO 2023-10-18 12:23:20,818 autoreload 25146 8640553536 Watching for file changes with StatReloader
+INFO 2023-10-18 12:23:24,748 basehttp 25146 13034078208 "GET /hw2/client_orders/7/ HTTP/1.1" 200 5982
+INFO 2023-10-18 12:24:19,676 basehttp 25146 13034078208 "GET /hw2/client_orders/1/ HTTP/1.1" 200 1172
+INFO 2023-10-18 12:24:31,985 basehttp 25146 13034078208 "GET /hw2/client_orders/5/ HTTP/1.1" 200 2375
+INFO 2023-10-18 12:25:27,064 basehttp 25146 13034078208 "GET /hw2/client_orders/5/ HTTP/1.1" 200 1697
+INFO 2023-10-18 12:31:14,877 basehttp 25146 13034078208 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2510
+INFO 2023-10-18 12:34:01,990 autoreload 25146 8640553536 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:34:02,598 autoreload 25284 8603292224 Watching for file changes with StatReloader
+INFO 2023-10-18 12:36:24,101 autoreload 25284 8603292224 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:36:24,592 autoreload 25331 8671048256 Watching for file changes with StatReloader
+INFO 2023-10-18 12:37:26,844 autoreload 25331 8671048256 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:37:27,293 autoreload 25354 8598331968 Watching for file changes with StatReloader
+INFO 2023-10-18 12:42:26,693 autoreload 25406 8607052352 Watching for file changes with StatReloader
+INFO 2023-10-18 12:42:49,849 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/7 HTTP/1.1" 301 0
+INFO 2023-10-18 12:42:49,878 basehttp 25406 12984008704 "GET /hw2/client_sorted/7/7/ HTTP/1.1" 200 1144
+INFO 2023-10-18 12:43:02,763 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/30/ HTTP/1.1" 200 1145
+INFO 2023-10-18 12:43:09,219 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/365/ HTTP/1.1" 200 1146
+INFO 2023-10-18 12:43:29,902 basehttp 25406 12967219200 "GET /hw2/client_sorted/1/365/ HTTP/1.1" 200 1057
+INFO 2023-10-18 12:44:13,022 basehttp 25406 12967219200 "GET /hw2/client_sorted/1/1000/ HTTP/1.1" 200 1058
+INFO 2023-10-18 12:44:23,057 basehttp 25406 12967219200 "GET /hw2/client_sorted/1/2/ HTTP/1.1" 200 1055
+INFO 2023-10-18 12:44:29,486 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/2/ HTTP/1.1" 200 1144
+INFO 2023-10-18 12:44:41,855 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/1000/ HTTP/1.1" 200 1147
+INFO 2023-10-18 12:44:43,525 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/1000/ HTTP/1.1" 200 1147
+INFO 2023-10-18 12:44:55,951 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/1000/ HTTP/1.1" 200 1147
+INFO 2023-10-18 12:44:57,171 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/1000/ HTTP/1.1" 200 1147
+INFO 2023-10-18 12:44:59,644 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/1/ HTTP/1.1" 200 1144
+INFO 2023-10-18 12:45:06,825 basehttp 25406 12967219200 "GET /hw2/client_sorted/7/3/ HTTP/1.1" 200 1144
+INFO 2023-10-18 12:45:46,335 basehttp 25406 12967219200 "GET /hw2/create_order/7/4 HTTP/1.1" 301 0
+INFO 2023-10-18 12:45:46,360 basehttp 25406 12984008704 "GET /hw2/create_order/7/4/ HTTP/1.1" 200 102
+INFO 2023-10-18 12:45:56,758 basehttp 25406 12967219200 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2775
+INFO 2023-10-18 12:46:38,539 basehttp 25406 12967219200 "GET /hw2/ HTTP/1.1" 200 1457
+INFO 2023-10-18 12:49:36,524 autoreload 25406 8607052352 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:49:36,851 autoreload 25492 8672563776 Watching for file changes with StatReloader
+INFO 2023-10-18 12:49:49,650 basehttp 25492 13097996288 "GET /hw2/client_orders/7/ HTTP/1.1" 200 2775
+INFO 2023-10-18 12:50:00,993 basehttp 25492 13097996288 "GET /hw2/client_sorted/7/7/ HTTP/1.1" 200 1045
+INFO 2023-10-18 12:50:13,815 basehttp 25492 13097996288 "GET /hw2/client_sorted/7/30/ HTTP/1.1" 200 1046
+INFO 2023-10-18 12:50:27,637 basehttp 25492 13097996288 "GET /hw2/client_sorted/7/1/ HTTP/1.1" 200 1045
+INFO 2023-10-18 12:50:53,599 autoreload 25492 8672563776 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/hw2/views.py changed, reloading.
+INFO 2023-10-18 12:50:53,946 autoreload 25508 8603796032 Watching for file changes with StatReloader
+INFO 2023-10-18 12:50:56,450 basehttp 25508 12960804864 "GET /hw2/client_sorted/7/1/ HTTP/1.1" 200 1238
+INFO 2023-10-18 12:51:59,995 basehttp 25508 12960804864 "GET /hw2/client_sorted/7/7/ HTTP/1.1" 200 1238
+WARNING 2023-10-18 12:52:10,770 log 25508 12960804864 Not Found: /hw2/client_sorted/2000/
+WARNING 2023-10-18 12:52:10,770 basehttp 25508 12960804864 "GET /hw2/client_sorted/2000/ HTTP/1.1" 404 3654
+INFO 2023-10-18 12:52:19,320 basehttp 25508 12960804864 "GET /hw2/client_sorted/7/2000/ HTTP/1.1" 200 1241

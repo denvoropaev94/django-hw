@@ -33,4 +33,4 @@ class Order(models.Model):
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
 
     def __str__(self):
-        return f"Total_price:{self.total_price}"
+        return f"Total_price:{self.total_price}, date_order:{self.date_ordered}"
