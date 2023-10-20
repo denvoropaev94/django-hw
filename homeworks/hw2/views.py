@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.core.files.storage import FileSystemStorage
+from django.shortcuts import render, redirect
 from datetime import datetime, timedelta
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from .models import Client, Product, Order
+from .forms import ClientForm, ProductForm
 
 
 def index(request):
@@ -14,9 +16,9 @@ def clients(request):
     return HttpResponse(users)
 
 
-def products(request):
-    prs = Product.objects.all()
-    return HttpResponse(prs)
+# def products(request):
+#     prs = Product.objects.all()
+#     return HttpResponse(prs)
 
 
 def create_order(request, client_id, product_ids):
@@ -53,3 +55,53 @@ def sorted_basket(request, client_id, days_ago):
 
     return render(request, 'hw2/client_all_product.html',
                   {'client': client, 'product_set': product_set, 'days': days_ago})
+
+
+def add_client(request):
+    form = ClientForm(request.POST, request.FILES)
+    if request.method == 'POST' and form.is_valid():
+        message = 'Ошибка в данных'
+        name = form.cleaned_data['name']
+        email = form.cleaned_data['email']
+        phone_number = form.cleaned_data['phone_number']
+        image = form.cleaned_data['image']
+        fs = FileSystemStorage()
+        fs.save(image.name, image)
+        address = form.cleaned_data['address']
+        client = Client(name=name, email=email, phone_number=phone_number, image=image, address=address)
+        client.save()
+        message = 'Клиент сохранен'
+    else:
+        form = ClientForm()
+        message = 'Заполните форму'
+    return render(request, 'hw2/add_client.html', {'form': form, 'message': message})
+
+
+def get_all_products(request):
+    products = Product.objects.all()
+    return render(request, 'hw2/products.html', {'products': products})
+
+
+def change_product(request, product_id):
+    product = Product.objects.filter(pk=product_id).first()
+    form = ProductForm(request.POST, request.FILES)
+    if request.method == 'POST' and form.is_valid():
+        image = form.cleaned_data['image']
+        if isinstance(image, bool):
+            image = None
+        if image is not None:
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+        product.name = form.cleaned_data['name']
+        product.description = form.cleaned_data['description']
+        product.price = form.cleaned_data['price']
+        product.count_product = form.cleaned_data['count_product']
+        product.image = image
+        product.save()
+        return redirect('products')
+    else:
+        form = ProductForm(initial={'name': product.name, 'description': product.description,
+                                    'price': product.price, 'count_product': product.count_product,
+                                    'image': product.image})
+
+    return render(request, 'hw2/change_product.html', {'form': form})

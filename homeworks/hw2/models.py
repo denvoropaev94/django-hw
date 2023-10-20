@@ -6,7 +6,7 @@ class Client(models.Model):
     email = models.EmailField(max_length=100)
     phone_number = models.CharField(max_length=50)
     image = models.ImageField(upload_to='photos/%Y/%m/%d/')
-    address = models.CharField(max_length=50)
+    address = models.CharField(max_length=50, default='vtb')
     date_registration = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now=True)
 
