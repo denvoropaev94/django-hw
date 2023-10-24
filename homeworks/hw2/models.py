@@ -11,7 +11,7 @@ class Client(models.Model):
     date_update = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"Username:{self.name}, email:{self.email} "
+        return f"Client:{self.name}"
 
 
 class Product(models.Model):
