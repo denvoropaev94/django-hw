@@ -3399,3 +3399,26 @@ INFO 2023-10-24 12:43:58,008 basehttp 48777 12938829824 "GET /admin/jsi18n/ HTTP
 INFO 2023-10-24 12:44:01,236 basehttp 48777 12938829824 "GET /admin/hw2/client/?date_registration__gte=2023-10-24+00%3A00%3A00%2B00%3A00&date_registration__lt=2023-10-25+00%3A00%3A00%2B00%3A00 HTTP/1.1" 200 16814
 INFO 2023-10-24 12:44:01,262 basehttp 48777 12938829824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
 INFO 2023-10-24 12:51:33,634 basehttp 48777 12938829824 "GET /admin/ HTTP/1.1" 200 9727
+INFO 2023-10-31 09:15:07,173 autoreload 61892 8593605184 Watching for file changes with StatReloader
+INFO 2023-10-31 09:15:10,871 basehttp 61892 12940025856 "GET / HTTP/1.1" 200 235
+WARNING 2023-10-31 09:15:11,529 log 61892 12956815360 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2023-10-31 09:15:11,530 basehttp 61892 12956815360 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 12874
+WARNING 2023-10-31 09:15:11,588 log 61892 12956815360 Not Found: /apple-touch-icon.png
+WARNING 2023-10-31 09:15:11,589 basehttp 61892 12956815360 "GET /apple-touch-icon.png HTTP/1.1" 404 12826
+WARNING 2023-10-31 09:15:11,603 log 61892 12940025856 Not Found: /favicon.ico
+WARNING 2023-10-31 09:15:11,604 basehttp 61892 12940025856 "GET /favicon.ico HTTP/1.1" 404 12790
+INFO 2023-10-31 09:15:57,756 basehttp 61892 12940025856 "GET / HTTP/1.1" 200 235
+INFO 2023-10-31 09:15:59,371 basehttp 61892 12940025856 "GET /hw2/client_orders/1/ HTTP/1.1" 200 11355
+INFO 2023-10-31 09:15:59,381 basehttp 61892 12940025856 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-10-31 09:15:59,382 basehttp 61892 12973604864 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-10-31 09:15:59,383 basehttp 61892 12940025856 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-10-31 09:15:59,401 basehttp 61892 12940025856 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-10-31 09:15:59,715 basehttp 61892 12940025856 "GET /hw2/ HTTP/1.1" 200 11605
+INFO 2023-10-31 09:39:32,773 autoreload 61892 8593605184 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/homeworks/settings.py changed, reloading.
+INFO 2023-10-31 09:39:33,240 autoreload 62244 8601084480 Watching for file changes with StatReloader
+INFO 2023-10-31 09:40:12,289 autoreload 62244 8601084480 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/homeworks/settings.py changed, reloading.
+INFO 2023-10-31 09:40:12,907 autoreload 62262 8643433024 Watching for file changes with StatReloader
+INFO 2023-10-31 09:40:56,917 autoreload 62262 8643433024 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/homeworks/settings.py changed, reloading.
+INFO 2023-10-31 09:40:57,346 autoreload 62284 8597463616 Watching for file changes with StatReloader
+INFO 2023-10-31 09:41:47,702 autoreload 62284 8597463616 /Users/denisvoropaev/PycharmProjects/django-hw/homeworks/homeworks/settings.py changed, reloading.
+INFO 2023-10-31 09:41:48,215 autoreload 62299 8607224384 Watching for file changes with StatReloader

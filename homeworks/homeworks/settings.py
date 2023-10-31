@@ -26,8 +26,15 @@ SECRET_KEY = 'django-insecure-o=x(=p-)c4e)5xyl&u*txu+q(perkz)rinf#7!0j_dl6d3p@w%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '172.20.10.2']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    '172.20.10.2',
+    'denvorop.pythonanywhere.com',
+]
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
 
 # Application definition
 
@@ -40,9 +47,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hw1',
     'hw2',
+    'debug_toolbar',
+
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -118,7 +128,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+STATIC_ROOT = BASE_DIR / 'static/'
 STATIC_URL = 'static/'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
